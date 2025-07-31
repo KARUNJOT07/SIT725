@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT725 Task 2.2P - Express Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Express Calculator Server</h1>
+        <p>This is a simple calculator built with Express.js and Node.js</p>
+        
+        <div class="calculator">
+            <h2>Calculator</h2>
+            <div class="input-group">
+                <label for="num1">First Number:</label>
+                <input type="number" id="num1" placeholder="Enter first number">
+            </div>
+            
+            <div class="input-group">
+                <label for="num2">Second Number:</label>
+                <input type="number" id="num2" placeholder="Enter second number">
+            </div>
+            
+            <div class="buttons">
+                <button onclick="calculate('add')">Add (+)</button>
+                <button onclick="calculate('subtract')">Subtract (-)</button>
+                <button onclick="calculate('multiply')">Multiply (×)</button>
+                <button onclick="calculate('divide')">Divide (÷)</button>
+            </div>
+            
+            <div class="result" id="result">
+                <p>Result will appear here</p>
+            </div>
+        </div>
+        
+        <div class="api-info">
+            <h2>API Endpoints</h2>
+            <div class="endpoint">
+                <strong>GET /add/num1/num2</strong>
+                <p>Example: <a href="/add/5/3" target="_blank">/add/5/3</a></p>
+            </div>
+            
+            <div class="endpoint">
+                <strong>GET /subtract/num1/num2</strong>
+                <p>Example: <a href="/subtract/10/4" target="_blank">/subtract/10/4</a></p>
+            </div>
+            
+            <div class="endpoint">
+                <strong>GET /multiply/num1/num2</strong>
+                <p>Example: <a href="/multiply/6/7" target="_blank">/multiply/6/7</a></p>
+            </div>
+            
+            <div class="endpoint">
+                <strong>GET /divide/num1/num2</strong>
+                <p>Example: <a href="/divide/20/4" target="_blank">/divide/20/4</a></p>
+            </div>
+            
+            <div class="endpoint">
+                <strong>GET /test</strong>
+                <p>Example: <a href="/test" target="_blank">/test</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
